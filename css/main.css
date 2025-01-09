@@ -128,19 +128,20 @@ a:hover { color: var(--primary-color-highlight); }
     object-fit: cover;
 } */
 
-.black-text {
+.hero__black-text {
     color: black;
 }
-
 .hero__content {
     z-index: 1;
 }
-.hero__logo {
-    /* width: 500px; */
-    margin-left: 230px;
-}
 .hero__content-width {
     max-width: 540px;
+}
+.hero__kanaloa {
+    font-size: 9rem;
+}
+.hero__surf-tech {
+    font-size: 3rem;
 }
 .hero__scroll-btn {
     position: absolute;
