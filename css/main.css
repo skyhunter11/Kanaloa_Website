@@ -62,6 +62,17 @@ a:hover { color: var(--primary-color-highlight); }
     background-color: rgba(0, 0, 0, 0.527);
     z-index: 2;
 }
+footer {
+    z-index: 10; /* Ensure this is higher than the z-index of other sections */
+    bottom: 10; /* Adjust positioning as needed */
+    left: 0;
+    width: 100%; /* Ensure the footer spans the width of the viewport */
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white; /* Optional: Change text color for contrast */
+    padding: 1rem; /* Optional: Add some padding for spacing */
+}
+
+
 
 /*
 * Flyout Navigation Bar
