@@ -97,13 +97,14 @@ a:hover { color: var(--primary-color-highlight); }
     /* background: url(/img/background-orange.jpg); */
 }
 .main__background-bottom {
+    /* Shows only bottom section of background image */
     object-position: center bottom; /* Focuses on the bottom-center portion */
     position: absolute; /* Allows proper positioning */
     bottom: 0; /* Aligns the image's bottom with the container */
     left: 0; /* Ensures the image starts at the left edge */
 }
 @media (min-width: 1900px) {
-    .main__stretch-background {
+    .main__background-stretch {
         width: 100%
     }
 }
