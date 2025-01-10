@@ -60,7 +60,6 @@ a:hover { color: var(--primary-color-highlight); }
 */
 .header {
     background-color: rgba(0, 0, 0, 0.527);
-
     z-index: 2;
 }
 
@@ -97,6 +96,15 @@ a:hover { color: var(--primary-color-highlight); }
     background-color: var(--primary-color);
     overflow: hidden;
     /* background: url(/img/background-orange.jpg); */
+}
+.hero__footer-background {
+    position: relative;
+    height: 100vh;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    background: url(/img/main-background.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center bottom;
 }
 @media (min-width: 1900px) {
     .hero__background {
