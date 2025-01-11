@@ -17,16 +17,16 @@
 }
 
 :root {
-    --primary-color: #505253;
-    --primary-color-highlight: #233D54;
+    --primary-color: black;
+    --primary-color-highlight: gray;
     --bs-body-bg: #FBF0F6;
     --bs-body-font-family: 'kionaregular', 'montserrat', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
 
-a { color: var(--primary-color); }
-a:hover { color: var(--primary-color-highlight); }
+a { color: white }
+a:hover { color: gray }
 
 /*
 @media (min-width: 544px) {}
@@ -121,9 +121,6 @@ a:hover { color: var(--primary-color-highlight); }
     }
 }
 
-.hero__black-text {
-    color: black;
-}
 .hero__content {
     z-index: 1;
 }
@@ -134,24 +131,32 @@ a:hover { color: var(--primary-color-highlight); }
     margin-bottom: -1rem;
 }
 
+
 .hero__scroll-btn {
     position: absolute;
     left: 50%;
     bottom: 30px;
     transform: translateX(-50%);
     z-index: 1;
-    color: var(--bs-light);
-    display: flex;
+    color: black;
+    /* color: var(--bs-light); */
+    display: none;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 .hero__scroll-btn:hover {
-    color: var(--bs-light);
-    opacity: 0.8;
+    color: white;
+}
+/* Show Learn More Scroll Btn only if the viewport height is 700px or more */
+@media (min-height: 700px) {
+    .hero__scroll-btn {
+        display: flex;
+    }
 }
 .hero__scroll-btn .bi {
-    transition-delay: 0.8s;
+    /* transition-delay: 0.8s; */
     animation: bounce 2s infinite alternate;
 }
 @keyframes bounce {
