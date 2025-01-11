@@ -58,21 +58,10 @@ a:hover { color: var(--primary-color-highlight); }
 /*
 * Main Header
 */
-.header {
+.header-footer {
     background-color: rgba(0, 0, 0, 0.527);
-    z-index: 2;
+    z-index: 1; /* Ensure this is higher than the z-index of other sections */
 }
-footer {
-    z-index: 10; /* Ensure this is higher than the z-index of other sections */
-    bottom: 10; /* Adjust positioning as needed */
-    left: 0;
-    width: 100%; /* Ensure the footer spans the width of the viewport */
-    background-color: rgba(0, 0, 0, 0.527);
-    color: white; /* Optional: Change text color for contrast */
-    padding: 1rem; /* Optional: Add some padding for spacing */
-}
-
-
 
 /*
 * Flyout Navigation Bar
@@ -105,14 +94,11 @@ footer {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    /* background: url(/img/background-orange.jpg); */
 }
 .main__background-bottom {
     /* Shows only bottom section of background image */
-    object-position: center bottom; /* Focuses on the bottom-center portion */
     position: absolute; /* Allows proper positioning */
     bottom: 0; /* Aligns the image's bottom with the container */
-    left: 0; /* Ensures the image starts at the left edge */
 }
 @media (min-width: 1900px) {
     .main__background-stretch {
@@ -134,17 +120,6 @@ footer {
         font-size: 9rem
     }
 }
-
-/* .hero__video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translateX(-50%) translateY(-50%);
-} */
 
 .hero__black-text {
     color: black;
@@ -221,6 +196,6 @@ footer {
 /*
 * Footer
 */
-.footer .border-highlight {
+/* .footer .border-highlight {
     border-top: 1px solid var(--primary-color-highlight)
-}
+} */
