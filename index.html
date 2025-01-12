@@ -36,9 +36,8 @@
             <!-- Left Group End-->
 
             <!-- Center Group Start -->
-            <!-- <a  href="/" class="text-decoration-none text-white fs-4 fw-bold">Kanaloa</a> -->
-            <div>
-                <img src="img/logo_hero.png" alt="Kanaloa Logo" class="img-fluid" width="100">
+            <div class="header__logo" aria-hidden="true" style="display: none;">
+                <img src="img/main-logo.png" alt="Small Kanaloa Logo" class="img-fluid" width="100">
             </div>
             <!-- Center Group End -->
 
@@ -117,7 +116,7 @@
     <!-- Flyout Navigation End -->
 
     <!-- Hero Start -->
-    <section class="main__background">
+    <section id="first-section" class="main__background">
 
         <!-- Background Start -->
         <img src="img/main-background.jpg" class="main__background-stretch" alt="The rich orange color of sunset">
@@ -126,7 +125,7 @@
         <!-- Container for Logo&Brand Name Start -->
         <div class="position-absolute top-50 start-50 translate-middle text-center">
             <div class="ps-4">
-                <img src="img/logo_hero.png" alt="Kanaloa Wave Logo" class="img-fluid hero__logo-n-margin" width="600" height="350" loading="lazy">
+                <img src="img/main-logo.png" alt="Kanaloa Wave Logo" class="img-fluid hero__logo-n-margin" width="600" height="350" loading="lazy">
             </div>
             <div>
                 <h1 class="text-black hero__kanaloa-text mb-0">Kanaloa</h1>
@@ -137,7 +136,7 @@
 
         <!---->
         <a href="#scroll-down" class="hero__scroll-btn fs-5 ">
-            Explore!<i class="bi bi-arrow-down-short fw-bold"></i>
+            Learn More<i class="bi bi-arrow-down-short fw-bold"></i>
         </a>
         <!---->
 
@@ -165,7 +164,7 @@
                         <p class="mb-4">
                             This is a bunch of random test text blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
                         </p>
-                        <a href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+                        <a class="steps__links" href="#">Learn more <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
                 <!-- Text End -->
@@ -194,7 +193,7 @@
                         <p class="mb-4">
                             This is a bunch of random test text blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
                         </p>
-                        <a href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+                        <a class="steps__links" href="#">Learn more <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
                 <!-- Text End-->
@@ -223,7 +222,7 @@
                         <p class="mb-4">
                             This is a bunch of random test text blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
                         </p>
-                        <a href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+                        <a class="steps__links" href="#">Learn more <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
                 <!-- Text End -->
@@ -321,9 +320,13 @@
     </div>
         <!-- Bottom Section End -->
 
+    <!-- Link to js file Start -->
+    <script src="js/header-script.js"></script>
+    <!-- Link to js file End -->
+
+
     <!-- Bootstrap JS Start -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <!-- Bootstrap JS End -->
-
 </body>
 </html>

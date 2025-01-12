@@ -19,7 +19,7 @@
 :root {
     --primary-color: black;
     --primary-color-highlight: gray;
-    --bs-body-bg: #FBF0F6;
+    --bs-body-bg: gray;
     --bs-body-font-family: 'kionaregular', 'montserrat', sans-serif;
 }
 
@@ -131,7 +131,6 @@ a:hover { color: gray }
     margin-bottom: -1rem;
 }
 
-
 .hero__scroll-btn {
     position: absolute;
     left: 50%;
@@ -186,6 +185,9 @@ a:hover { color: gray }
 }
 .steps--background {
     background-color: #FEF8F9;
+}
+.steps__links {
+    color: black;
 }
 
 @media (min-width: 544px) {
