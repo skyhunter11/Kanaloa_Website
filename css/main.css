@@ -62,6 +62,9 @@ a:hover { color: gray }
     background-color: rgba(0, 0, 0, 0.527);
     z-index: 1; /* Ensure this is higher than the z-index of other sections */
 }
+.header__logo {
+    display: none;
+}
 
 /*
 * Flyout Navigation Bar
