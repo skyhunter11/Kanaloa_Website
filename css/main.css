@@ -58,8 +58,14 @@ a:hover { color: gray }
 /*
 * Main Header
 */
+header {
+    padding: 1.5rem;
+}
+header.scrolled {
+    padding: 0rem 1.5rem;
+}
 .header-footer {
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: rgba(0, 0, 0, 0.15);
     z-index: 1; /* Ensure this is higher than the z-index of other sections */
 }
 .header__logo {
