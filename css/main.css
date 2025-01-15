@@ -19,14 +19,14 @@
 :root {
     --primary-color: black;
     --primary-color-highlight: gray;
-    --bs-body-bg: gray;
+    --bs-body-bg: rgb(65, 65, 65);
     --bs-body-font-family: 'kionaregular', 'montserrat', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
 
 a { color: white }
-a:hover { color: gray }
+a:hover { color: rgb(87, 85, 85) }
 
 /*
 @media (min-width: 544px) {}
