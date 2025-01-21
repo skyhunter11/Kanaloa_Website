@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const scrollPosition = window.scrollY;
 
         // Show logo if scrolled halfway down the first section
-        if (scrollPosition > sectionHeight / 2) {
+        if (scrollPosition > sectionHeight / (1.3)) {
 
             // Show the logo
             logo.style.display = "block";
