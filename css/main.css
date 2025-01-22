@@ -55,15 +55,18 @@ a:hover { color: #333 }
     .container-custom { width: 1520px; }
 }
 
-/*
-* Main Header
-*/
+/**
+/* Main Header Start
+**/
 header {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 header.scrolled {
     padding: 0rem 1.5rem;
+}
+.sub-container {
+    height: 72px;
 }
 .header-footer {
     background-color: rgba(0, 0, 0, 0.15);
@@ -72,6 +75,9 @@ header.scrolled {
 .header__logo {
     display: none;
 }
+/**
+/* Main Header End
+**/
 
 /*
 * Sample Flyout Navigation Bar Start
@@ -112,6 +118,7 @@ header.scrolled {
     border: none;
     background: none;
 }
+
 .hamburger span {
     width: 25px;
     height: 3px;
@@ -135,7 +142,7 @@ header.scrolled {
 /**
 /* Flyout Menu Start
 **/
-.header__nav--flyout {
+.flyout-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -149,7 +156,7 @@ header.scrolled {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 /* Flyout Menu (Active) */
-.header__nav--flyout.active {
+.flyout-menu.active {
     display: flex;
     transform: translateY(0);
     opacity: 1;
@@ -169,9 +176,7 @@ header.scrolled {
     .hamburger {
         display: flex; /* Show hamburger */
     }
-    .header__nav--flyout {
-        display: none; /* Controlled via JavaScript */
-    }
+
 }
 /**
 /* Media Query for Narrow Screens End
@@ -179,7 +184,7 @@ header.scrolled {
 
 
 /**
-/* Hero Section
+/* Hero Section Start
 **/
 .main__background {
     position: relative;
@@ -257,10 +262,14 @@ header.scrolled {
         transform: translateY(10px);
     }
 }
+/**
+/* Hero Section End
+**/
 
-/*
-* Steps Section
-*/
+
+/**
+/* Steps Section Start
+**/
 .steps {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -290,10 +299,6 @@ header.scrolled {
         height: auto;
     }
 }
-
-/*
-* Footer
-*/
-/* .footer .border-highlight {
-    border-top: 1px solid var(--primary-color-highlight)
-} */
+/**
+/* Steps Section End
+**/

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Hamburger Adjustments Start //
     // Hook elements
     const hamburger = document.querySelector(".hamburger");
-    const flyoutNav = document.querySelector(".header__nav--flyout");
+    const flyoutNav = document.querySelector(".flyout-menu");
 
     // Toggle flyout menu
     hamburger.addEventListener("click", () => {
