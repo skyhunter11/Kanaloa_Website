@@ -25,8 +25,8 @@
 
 html { scroll-behavior: smooth; }
 
-a { color: white }
-a:hover { color: rgb(87, 85, 85) }
+a { color: whitesmoke }
+a:hover { color: #333 }
 
 /*
 @media (min-width: 544px) {}
@@ -60,6 +60,7 @@ a:hover { color: rgb(87, 85, 85) }
 */
 header {
     padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 header.scrolled {
     padding: 0rem 1.5rem;
@@ -73,9 +74,9 @@ header.scrolled {
 }
 
 /*
-* Flyout Navigation Bar
+* Sample Flyout Navigation Bar Start
 */
-#navbar {
+/* #navbar {
     position: fixed;
     left: 0;
     top: 0;
@@ -93,12 +94,93 @@ header.scrolled {
 .dropdown-nav__container {
     height: 100vh;
     padding: 0 1rem;
-}
-
-
+} */
 /*
-* Hero Section
+* Sample Flyout Navigation Bar End
 */
+
+
+/**
+/* Hamburger Button Start
+**/
+.hamburger {
+    position: absolute;
+    right: 1rem; /* Distance from the right edge */
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    background: none;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    transition: all 0.3s;
+}
+/* Hamburger Animation (Open) */
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+/**
+/* Hamburger Button End
+**/
+
+/**
+/* Flyout Menu Start
+**/
+.header__nav--flyout {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/* Flyout Menu (Active) */
+.header__nav--flyout.active {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+}
+/**
+/* Flyout Menu End
+**/
+
+/**
+/* Media Query for Narrow Screens Start
+**/
+@media (max-width: 768px) {
+    .header__nav--left,
+    .header__nav--right {
+        display: none; /* Hide normal nav links */
+    }
+    .hamburger {
+        display: flex; /* Show hamburger */
+    }
+    .header__nav--flyout {
+        display: none; /* Controlled via JavaScript */
+    }
+}
+/**
+/* Media Query for Narrow Screens End
+**/
+
+
+/**
+/* Hero Section
+**/
 .main__background {
     position: relative;
     height: 100vh;
@@ -155,7 +237,7 @@ header.scrolled {
     transition: color 0.3s ease;
 }
 .hero__scroll-btn:hover {
-    color: white;
+    color: whitesmoke;
 }
 /* Show Learn More Scroll Btn only if the viewport height is 700px or more */
 @media (min-height: 700px) {

@@ -29,7 +29,7 @@
         <div class="d-flex justify-content-between align-items-center">
 
             <!-- Left Group Start-->
-            <nav>
+            <nav class="header__nav--left">
                 <a  href="/" class="text-decoration-none fs-6 p-2 fw-bold">Pricing</a>
                 <a  href="/" class="text-decoration-none fs-6 p-2 fw-bold">Features</a>
             </nav>
@@ -39,11 +39,10 @@
             <a href="/" class="header__logo" aria-hidden="true">
                 <img src="img/main-logo-white.png" alt="Small Kanaloa Logo" class="img-fluid" width="100">
             </a>
-
             <!-- Center Group End -->
 
             <!-- Right Group Start-->
-             <nav>
+             <nav class="header__nav--right">
                 <a  href="/" class="text-decoration-none fs-6 p-2 fw-bold">Help</a>
                 <a  href="/" class="text-decoration-none fs-6 p-2 fw-bold">About Us</a>
              </nav>
@@ -56,14 +55,37 @@
             </div> -->
             <!-- Right Group End-->
 
+            <!-- Hamburger Menu Start -->
+            <button 
+                class="hamburger" 
+                aria-expanded="false" 
+                aria-controls="nav-menu" 
+                aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- Hamburger Menu End -->
+
         </div>
         <!-- Sub-Container End -->
+
+        <!-- Flyout menu for mobile -->
+        <nav id="nav-menu" class="header__nav header__nav--flyout" aria-hidden="true">
+            <ul>
+                <li><a href="#home">Pricing</a></li>
+                <li><a href="#about">Features</a></li>
+                <li><a href="#services">Help</a></li>
+                <li><a href="#contact">About Us</a></li>
+            </ul>
+        </nav>
+        <!-- Flyout menu for mobile -->
 
     </header>
     <!-- Header End -->
 
     <!-- Flyout Navigation Start -->
-    <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+    <!-- <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
 
         <div class="dropdown-nav__container container-xxl d-flex align-items-start align-items-md-center">
             <div class="row align-items-start">
@@ -113,7 +135,7 @@
               </svg>
         </button>
     </div>
-    </nav>
+    </nav> -->
     <!-- Flyout Navigation End -->
 
     <!-- Section One - Hero: Start -->

@@ -3,15 +3,32 @@ JS code for header logo
 */
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Hook .header_logo
-    const logo = document.querySelector(".header__logo");
+// Hamburger Adjustments Start //
+    // Hook elements
+    const hamburger = document.querySelector(".hamburger");
+    const flyoutNav = document.querySelector(".header__nav--flyout");
 
-    // Hook first-section
+    // Toggle flyout menu
+    hamburger.addEventListener("click", () => {
+        const isExpanded = hamburger.getAttribute("aria-expanded") === "true";
+
+        // Update ARIA attributes
+        hamburger.setAttribute("aria-expanded", !isExpanded);
+        flyoutNav.setAttribute("aria-hidden", isExpanded);
+
+        // Toggle classes
+        flyoutNav.classList.toggle("active");
+        hamburger.classList.toggle("open");
+    });
+// Hamburger Adjustments End //
+
+// Header Adjustments Start //
+    //Hook elements
+    const logo = document.querySelector(".header__logo");
     const firstSection = document.getElementById("first-section");
-    
-    // Hook header
     const header = document.querySelector("header");
 
+    // Listen to scroll position
     window.addEventListener("scroll", () => {
         const sectionHeight = firstSection.offsetHeight;
         const scrollPosition = window.scrollY;
@@ -35,4 +52,5 @@ document.addEventListener("DOMContentLoaded", () => {
             header.classList.remove("scrolled");
         }
     });
+// Header Adjustments End //
 });
