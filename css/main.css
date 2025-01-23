@@ -18,8 +18,8 @@
 
 :root {
     --primary-color: black;
-    --primary-color-highlight: gray;
-    --bs-body-bg: rgb(65, 65, 65);
+    --primary-color-highlight: whitesmoke;
+    --bs-body-bg: #333;
     --bs-body-font-family: 'kionaregular', 'montserrat', sans-serif;
 }
 
@@ -37,9 +37,9 @@ a:hover { color: #333 }
 @media (min-width: 1600px) {}
 */
 
-/*
-* Custom Container
-*/
+/**
+/* Custom Container Start
+**/
 .container-custom {
     width: 100%;
     padding: 0 1rem;
@@ -54,6 +54,9 @@ a:hover { color: #333 }
 @media (min-width: 1600px) {
     .container-custom { width: 1520px; }
 }
+/**
+/* Custom Container End
+**/
 
 /**
 /* Main Header Start
@@ -78,33 +81,6 @@ header.scrolled {
 /**
 /* Main Header End
 **/
-
-/*
-* Sample Flyout Navigation Bar Start
-*/
-/* #navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(255, 247, 231);
-    z-index: 4;
-}
-.dropdown-nav__closeNavBtn {
-    position: absolute;
-    top: 20px;
-    right: 16px;
-    background-color: rgb(255, 255, 255, 0.6);
-}
-.dropdown-nav__container {
-    height: 100vh;
-    padding: 0 1rem;
-} */
-/*
-* Sample Flyout Navigation Bar End
-*/
-
 
 /**
 /* Hamburger Button Start
@@ -283,11 +259,18 @@ header.scrolled {
     max-width: 456px;
     margin: 0 auto;
 }
-.steps--background {
-    background-color: #FEF8F9;
+.steps--background-light {
+    /* background-color: #FEF8F9; */
+    background-color: #DCDCDC;
 }
-.steps__links {
+.steps--background-dark {
+    background-color: #D3D3D3;
+}
+.steps a {
     color: black;
+}
+.steps a:hover {
+    color: #696969
 }
 
 @media (min-width: 544px) {
