@@ -19,14 +19,14 @@
 :root {
     --primary-color: black;
     --primary-color-highlight: whitesmoke;
-    --bs-body-bg: #333;
+    --bs-body-bg: #A9A9A9;
     --bs-body-font-family: 'kionaregular', 'montserrat', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
 
 a { color: whitesmoke }
-a:hover { color: #333 }
+a:hover { color: #A9A9A9 }
 
 /*
 @media (min-width: 544px) {}
@@ -85,7 +85,7 @@ header.scrolled {
 /**
 /* Hamburger Button Start
 **/
-.hamburger {
+.hamburger-button {
     position: absolute;
     right: 1rem; /* Distance from the right edge */
     display: none;
@@ -94,21 +94,20 @@ header.scrolled {
     border: none;
     background: none;
 }
-
-.hamburger span {
+.hamburger-button span {
     width: 25px;
     height: 3px;
     background-color: whitesmoke;
     transition: all 0.3s;
 }
 /* Hamburger Animation (Open) */
-.hamburger.open span:nth-child(1) {
+.hamburger-button.open span:nth-child(1) {
     transform: rotate(45deg) translateY(8px);
 }
-.hamburger.open span:nth-child(2) {
+.hamburger-button.open span:nth-child(2) {
     opacity: 0;
 }
-.hamburger.open span:nth-child(3) {
+.hamburger-button.open span:nth-child(3) {
     transform: rotate(-45deg) translateY(-8px);
 }
 /**
@@ -121,11 +120,11 @@ header.scrolled {
 .flyout-menu {
     display: none;
     position: absolute;
-    top: 100%;
     right: 0;
     background-color: black;
     width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     transform: translateY(-10px);
     opacity: 0;
@@ -134,8 +133,29 @@ header.scrolled {
 /* Flyout Menu (Active) */
 .flyout-menu.active {
     display: flex;
+    flex-direction: column; /* Align items vertically */
     transform: translateY(0);
     opacity: 1;
+}
+/* Menu items styling */
+.flyout-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.flyout-menu li {
+    margin-bottom: 1rem;
+}
+.flyout-menu li:last-child {
+    margin-bottom: 0; /* Remove margin for the last item */
+}
+.flyout-menu a {
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+.flyout-menu a:hover {
+    color: #ff9800;
 }
 /**
 /* Flyout Menu End
@@ -149,7 +169,7 @@ header.scrolled {
     .header__nav--right {
         display: none; /* Hide normal nav links */
     }
-    .hamburger {
+    .hamburger-button {
         display: flex; /* Show hamburger */
     }
 
@@ -210,7 +230,6 @@ header.scrolled {
     transform: translateX(-50%);
     z-index: 1;
     color: black;
-    /* color: var(--bs-light); */
     display: none;
     flex-direction: column;
     align-items: center;
@@ -267,10 +286,10 @@ header.scrolled {
     background-color: #D3D3D3;
 }
 .steps a {
-    color: black;
+    color: var(--primary-color);
 }
 .steps a:hover {
-    color: #696969
+    color: #A9A9A9;
 }
 
 @media (min-width: 544px) {

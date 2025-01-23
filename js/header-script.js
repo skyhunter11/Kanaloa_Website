@@ -5,20 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Hamburger Adjustments Start //
     // Hook elements
-    const hamburger = document.querySelector(".hamburger");
-    const flyoutNav = document.querySelector(".flyout-menu");
+    const hamburgerButton = document.querySelector(".hamburger-button");
+    const flyoutMenu = document.querySelector(".flyout-menu");
 
     // Toggle flyout menu
-    hamburger.addEventListener("click", () => {
-        const isExpanded = hamburger.getAttribute("aria-expanded") === "true";
+    hamburgerButton.addEventListener("click", () => {
+        const isExpanded = hamburgerButton.getAttribute("aria-expanded") === "true";
 
         // Update ARIA attributes
-        hamburger.setAttribute("aria-expanded", !isExpanded);
-        flyoutNav.setAttribute("aria-hidden", isExpanded);
+        hamburgerButton.setAttribute("aria-expanded", !isExpanded);
+        flyoutMenu.setAttribute("aria-hidden", isExpanded);
 
         // Toggle classes
-        flyoutNav.classList.toggle("active");
-        hamburger.classList.toggle("open");
+        hamburgerButton.classList.toggle("open");
+        flyoutMenu.classList.toggle("active");
     });
 // Hamburger Adjustments End //
 
