@@ -26,7 +26,7 @@
 html { scroll-behavior: smooth; }
 
 a { color: whitesmoke }
-a:hover { color: #A9A9A9 }
+a:hover { color: black }
 
 /*
 @media (min-width: 544px) {}
@@ -265,6 +265,13 @@ header.scrolled {
 /**
 /* Steps Section Start
 **/
+.steps--background-light {
+    /* background-color: #FEF8F9; */
+    background-color: #DCDCDC;
+}
+.steps--background-dark {
+    background-color: #D3D3D3;
+}
 .steps {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -278,18 +285,11 @@ header.scrolled {
     max-width: 456px;
     margin: 0 auto;
 }
-.steps--background-light {
-    /* background-color: #FEF8F9; */
-    background-color: #DCDCDC;
-}
-.steps--background-dark {
-    background-color: #D3D3D3;
-}
 .steps a {
     color: var(--primary-color);
 }
 .steps a:hover {
-    color: #A9A9A9;
+    color: #808080;
 }
 
 @media (min-width: 544px) {
