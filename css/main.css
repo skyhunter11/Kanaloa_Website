@@ -16,11 +16,19 @@
 
 }
 
+@font-face {
+font-family: 'Lato-Light';
+src: url('/fonts/Lato-Light.ttf') format('truetype');
+font-weight: 300; /* Light */
+font-style: normal;
+font-display: swap;
+}
+
 :root {
     --primary-color: black;
     --primary-color-highlight: whitesmoke;
     --bs-body-bg: #A9A9A9;
-    --bs-body-font-family: 'kionaregular', 'montserrat', sans-serif;
+    --bs-body-font-family: 'Lato-Light', times;
 }
 
 html { scroll-behavior: smooth; }
